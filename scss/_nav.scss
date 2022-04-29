@@ -1,0 +1,116 @@
+.header-nav__nav ul {
+  gap: 1rem;
+}
+.header-nav__nav ul li {
+  display: inline-block;
+  margin-right: -4px;
+  margin-left: 5px;
+  vertical-align: top;
+}
+.header-nav__nav a {
+  padding: 7px 10px;
+  text-decoration: none;
+  color: $nav-link-color;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+.header-nav__nav a:hover {
+  background: rgba(67, 104, 218, 0.35);
+}
+.header-nav__nav ul li ul {
+  position: absolute;
+  display: block;
+  margin-top: 5px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  background: none;
+  padding-top: 5px;
+}
+.header-nav__nav ul li ul li {
+  display: block;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+.header-nav__nav ul li ul li a {
+  display: block;
+  color: $nav-link-color;
+  font-size: 0.9em;
+  text-align: left;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.35);
+  padding: 10px;
+}
+.header-nav__nav ul li ul li a:hover {
+  background: rgba(20, 150, 220, 0.5);
+  border-left: 2px solid $secondary-color;
+  color: black;
+  margin-left: 5px;
+}
+
+.hamburger-icon {
+  display: none;
+  order: 9;
+  cursor: pointer;
+  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.2));
+}
+.hamburger-close-icon {
+  position: fixed;
+  cursor: pointer;
+  left: -200px;
+  z-index: 99;
+  transition: left 0.5s;
+}
+.hamburger-close-icon__show {
+  left: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger-icon {
+    display: block;
+  }
+  .header-nav__nav {
+    position: absolute;
+    left: -250px;
+    right: 250px;
+    transition: left 0.5s;
+  }
+  .header-nav__nav__show {
+    left: 0;
+    a {
+      color: white;
+    }
+  }
+  .header-nav__nav ul {
+    display: flex;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+  }
+  .header-nav__nav ul ul {
+    display: none !important;
+  }
+}
+
+.hamburger-nav-bg {
+  background: url(../assets/img/bg-main-mobile.png);
+  background-color: $secondary-color;
+  width: 50vw;
+  max-width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  bottom: 0;
+  transition: left 0.5s;
+}
+.hamburger-nav-bg__show {
+  left: 0;
+}
+
+.nav-overlay {
+  visibility: hidden;
+  position: absolute;
+  z-index: 99;
+  inset: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.4);
+}

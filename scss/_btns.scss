@@ -1,0 +1,52 @@
+.btn {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 15px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: 0.3s transform;
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.btn--primary {
+  color: $secondary-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $secondary-color;
+  transition: color 0.25s, background-color 0.25s;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $bg-color;
+  }
+}
+
+.btn--secondary {
+  background-color: $secondary-color;
+  color: $bg-color;
+  transition: background-color 0.25s;
+
+  &:hover {
+    background-color: rgb(51, 79, 166);
+  }
+}
+
+.btn--lg {
+  padding: 10px 20px;
+  font-size: 1.1em;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-base {
+  border-radius: 10px;
+}

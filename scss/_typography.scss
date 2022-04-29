@@ -1,0 +1,77 @@
+// Font Sizes
+.text-sm {
+  font-size: 12px;
+}
+.text-base {
+  font-size: 14px;
+}
+.text-semi-lg {
+  font-size: 16px;
+}
+.text-lg {
+  font-size: 18px;
+}
+.text-2xl {
+  font-size: 24px;
+}
+.text-4xl {
+  font-size: 30px;
+  @media screen and (max-width: 600px) {
+    font-size: 25px;
+  }
+}
+
+// Font Weights
+.weight-bold {
+  font-weight: 900;
+}
+.weight-semi-bold {
+  font-weight: 700;
+}
+.weight-normal {
+  font-weight: 400;
+}
+.weight-light {
+  font-weight: 200;
+}
+
+// Font Colors
+.text-gray {
+  color: $text-color;
+}
+.text-primary {
+  color: $primary-color;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+
+// ...
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+.max-width-500 {
+  max-width: 600px;
+}
+
+.line-height-1_5 {
+  line-height: 1.8;
+}
+
+.sub-heading {
+  margin-bottom: -1.5rem;
+}
+
+.link {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+}

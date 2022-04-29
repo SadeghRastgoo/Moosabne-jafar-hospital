@@ -1,0 +1,20 @@
+// .hover-animation {
+//   position: relative;
+//   z-index: 99;
+// }
+// .hover-animation::before {
+//   content: "";
+//   position: absolute;
+//   inset: 75% -0.5rem 0 -0.5rem;
+//   background: $primary-color;
+//   z-index: -1;
+//   transition: transform .3s ease;
+//   transform: scaleX(0);
+//   transform-origin: bottom left;
+// }
+// .hover-animation:hover::before {
+//   transform: scaleX(1);
+//   transform-origin: bottom right;
+// }
+
+
